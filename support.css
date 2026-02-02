@@ -35,7 +35,7 @@ body {
 .logo span { color: var(--gold); }
 
 .nav-links { list-style: none; display: flex; gap: 25px; margin: 0; }
-.nav-links a { text-decoration: none; color: #bbb; font-size: 0.9rem; transition: 0.3s; }
+.nav-links a { text-decoration: none; color: white; font-size: 0.9rem; transition: 0.3s; }
 .nav-links a:hover { color: var(--gold); }
 
 .nav-cta {
