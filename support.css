@@ -116,3 +116,114 @@ body {
 .copy-wrapper button:hover { background: var(--gold); color: black; }
 .gold-border { border: 1.5px solid var(--gold); }
 .audit-note { text-align: center; padding: 0 40px 40px; color: #0c0808; font-size: 0.8rem; }
+
+:root {
+    --gold: #D4AF37;
+    --black: #1a1a1a;
+    --white: #ffffff;
+    --soft-gray: #f4f4f4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    background: var(--white);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.gold-text { color: var(--gold); }
+.white-text { color: var(--white); }
+.center { text-align: center; }
+
+/* Navbar */
+#navbar {
+    background: var(--black);
+    padding: 1.2rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.4s;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+/* Hero and Images */
+.kids-photo-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.kids-photo-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.8s;
+}
+
+.kids-photo-wrapper:hover img {
+    transform: scale(1.05);
+}
+
+.impact-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--black);
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Buttons */
+.btn-main-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.btn-main-cta:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+}
