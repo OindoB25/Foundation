@@ -48,8 +48,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('pic6.jpeg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('pic9.jpeg') center/cover;
     height: 350px;
+    object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
