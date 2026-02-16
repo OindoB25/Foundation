@@ -6,6 +6,9 @@
     <title>Contact Us | Agutu Asoyo Foundation</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
 
@@ -73,8 +76,10 @@
 
             <div class="card form-card">
                 <h3 class="gold-text">Send a Message</h3>
-                <form id="contactForm">
+                <form id="contactForm" name="contactForm">
+                    <label for="name">Full Name</label>
                     <input type="text" placeholder="Full Name" required>
+                    <label for="email">Email Address</label>
                     <input type="email" placeholder="Email Address" required>
                     <textarea placeholder="How can we help you?" rows="5" required></textarea>
                     <button type="submit" class="submit-btn">Send Message</button>

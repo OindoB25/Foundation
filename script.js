@@ -98,6 +98,32 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         this.reset();
     }, 1500);
 });
+
+
+
+
+function sendMyEmail(event) {
+    event.preventDefault(); // This is the "Stop Refresh" command
+    console.log("The page did NOT refresh! Success.");
+
+    const btn = document.getElementById('button');
+    btn.innerText = 'Sending...';
+
+    emailjs.sendForm('service_i2uxn8j', '_ejs-test-mail-service__', event.target)
+        .then(() => {
+            alert('Sent!');
+            btn.innerText = 'Send Message';
+        }, (err) => {
+            alert('Error: ' + JSON.stringify(err));
+            btn.innerText = 'Send Message';
+        });
+}
+
+
+
+
+
+
 //info
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Corrected Scroll Reveal Observer
